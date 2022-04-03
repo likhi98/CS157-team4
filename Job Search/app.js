@@ -39,6 +39,10 @@ app.get('/', function(req, res, next){
 
 });
 
+// Create job listing Page
+app.get('/createjoblisting', function(req, res, next){
+  res.sendFile(__dirname + '/views/createjoblisting.html')
+})
 app.listen(port, function(){
     console.log('Server started on port '+port);
   });
